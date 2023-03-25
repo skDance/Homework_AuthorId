@@ -46,7 +46,7 @@ fun main(args: Array<String>) {
         val postWithCommentsAndAuthors: List<PostWithCommentsAndAuthors> = postWithComments.map {
             PostWithCommentsAndAuthors(PostWithAuthor(it.post, getAuthor(it.post.authorId)), it.comments)
         }
-
+        println(postWithCommentsAndAuthors)
     }
     Thread.sleep(10000)
 }

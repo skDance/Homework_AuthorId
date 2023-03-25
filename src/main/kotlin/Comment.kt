@@ -1,5 +1,5 @@
 data class Comment(
-    val id: List<Comment>,
+    val id: Long,
     val postId: Long,
     val author: Author,
     val content: String,
